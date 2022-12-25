@@ -2,13 +2,13 @@
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    
 }
 
 body { 
     font-family: 'Cinzel', serif;
-    margin:0
-    
+    margin:0 ;
 }
 
 
@@ -24,17 +24,32 @@ h1 {
       }
 */
     
-    .btnpmobil {
+    .btnpmovil {
             position: relative;
             background-color: #ffa400;
             border: 1px solid #222;
             border-radius: 40px;
             width: 300px;
-            height: 40px;
+            height: 50px;
             display: flex;
             align-items: center;
             text-transform: uppercase;
             justify-content: center;
             flex-wrap: nowrap;
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            margin-left: auto;
+            margin-right: auto;
           }
-      
+.imagenfondo {
+    border: 1px solid black;
+    padding: 25px;
+    background: url(../img/tramaylogo_ibp8iu_c_scale\,w_817.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+.altura-fondo {
+    height: 700px;
+    width: 700px;
+}
