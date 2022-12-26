@@ -9,8 +9,11 @@
 body { 
     font-family: 'Cinzel', serif;
     margin:0 ;
+    min-width: 660px;
 }
-
+header {
+    min-width: 660px;
+}
 
 h1 {
     color : #141414
@@ -42,14 +45,59 @@ h1 {
             margin-right: auto;
           }
 .imagenfondo {
-    border: 1px solid black;
+   
     padding: 25px;
-    background: url(../img/tramaylogo_ibp8iu_c_scale\,w_817.png);
+    background: url(../img/tramaylogo_ibp8iu_c_scale\,w_634.png);
     background-repeat: no-repeat;
-    background-size: auto;
-    
+    background-size: auto;    
 }
 .altura-fondo {
     height: 700px;
     width: 700px;
 }
+.btnmenu {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50em;
+    
+    background-repeat: no-repeat;
+    background-size: auto;    
+}
+
+.text-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:#ffa400;
+    padding-right: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    font-family: 'Cinzel';
+    font-size: 15px;
+    display: inline-flex;
+    
+}
+.menu-display-none {
+display: none;
+}
+
+
+.texto-girado {
+    transform:  translateX(89%) translateY(-2%) rotate(270deg);
+    margin-block-start: initial;
+    width: 1000px;
+    font-size: 38px;
+    
+
+    }
+
+
+    
+.container {
+    display: flex;
+    align-content: flex-start;
+}
+
