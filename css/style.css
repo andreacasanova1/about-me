@@ -43,17 +43,45 @@ h1 {
             font-size: 22px;
             margin-left: auto;
             margin-right: auto;
+            top:900px;
+
+
           }
-.imagenfondo {
-   
-    padding: 25px;
-    background: url(../img/tramaylogo_ibp8iu_c_scale\,w_634.png);
+.imagenfondopajaro {
+    background: url(../img/trama-y-logo-500x1000.png);
     background-repeat: no-repeat;
-    background-size: auto;    
+    height: 1300px;
+    background-size: 100%
+}
+.imagenfondoretrato {
+    background: url(../img/retrato-500x1000.png);
+    background-repeat: no-repeat;
+    height: 1300px;
+    background-size: 100%
 }
 .altura-fondo {
-    height: 700px;
-    width: 700px;
+    height: 100%;
+    width: 100%;
+}
+.letra-blanca {
+    color: #ffff;
+}
+.fondo-negro {
+    background-color: #141414;
+    height: 1300px;
+    width: 658px;
+}
+.container {
+    margin-block-start: auto;
+    padding: 50px 50px 50px 50px;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+  }
+
+p {
+    font-family: system-ui;
+    font-size: x-large;
 }
 .btnmenu {
     border: 1px solid black;
@@ -94,10 +122,18 @@ display: none;
 
     }
 
-
+.texto-vertical {
+    transform: translateX(-46%) translateY(547px) rotate(270deg);
+    margin-block-start: initial;
+    width: 1187px;
+    font-size: 26px;
+    text-align: center;
     
-.container {
-    display: flex;
-    align-content: flex-start;
-}
+
+    }
+    .fondo-blanco {
+        background-color: #ffff;
+        height: 95px;
+    }
+
 
