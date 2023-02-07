@@ -9,13 +9,192 @@
 body { 
     font-family: 'Cinzel', serif;
     margin:0 ;
+    min-width: 660px;
 }
-
+main section footer {
+    min-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 h1 {
-    color : #141414
+    color : #141414;
+    font-size: 22px; 
+}
+.imagenportada {
+    background-image: url(../img/tramaylogo_ibp8iu_c_scale\,w_817.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 300%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.content-retrato {
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+} 
+
+.vertical-text__text {
+    transform: rotate(-180deg);
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    width: 16vw;
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    display: flex;
+}
+.foto-retrato {
+    background-image: url(../img/andrea-casanova_wxenzr_c_scale\,w_834.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 90vw;   
+}
+.fondo-negro {
+    display: flex;
+    background-color: #141414;
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6em 3em 8em 3em;
+}
+p {
+    display: flex;
+    font-family: system-ui;
+    font-size: 32px;
+    color: #fff;
+    margin-left: 3em;
+    margin-right: 3em;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.content {
+    
+    
+}
+.foto-diseño-web {
+    background-image: url(../img/diseno-web_man35p_c_scale\,w_610.png);
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+.foto-ux-ui {
+    background-image: url(../img/ux-ui\,w_631.png);
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+
+.foto-marketing {
+    background-image: url(../img/marketing\,w_637.png);
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+.shop-art {
+    background-image: url(../img/art-shop_oaplpt_c_scale\,w_890.png);
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+
+.texto-servicios {
+    padding: 3em 3em 3em 8em;
+    font-size: 22px;
+    background-color: #e3dfdf;
+    color: #141414;
+    margin: 0;
+}
+.contenedor-imagen2 {
+    background-image: url(../img/trama-blanco2_bxgrqg_c_scale\,w_890.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 300%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btnfooter {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap-reverse;
+    margin-block-start: -164px;
+    margin-block-end: 21em;
+    margin-bottom: 50px;
+}
+.form {
+    background-color: #ffff;
+    font-family: 'Cinzel';
+    font-size: 55px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 100px;
+    margin-block-end: 600px;
+}
+.logomio {
+    background-image: url(../img/logo-letras-400px.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+}
+.btnfooter {
+    background-color: #ffa400;
+    border: 1px solid #222;
+    border-radius: 40px;
+    /* width: 300px; */
+    height: 50px;
+    display: flex;
+    /* align-items: center; */
+    text-transform: uppercase;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+}
+.contact {
+    background-color: #ffff;
+    font-family: 'Cinzel';
+    font-size: 22px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 100px;
+    margin-block-end: 600px;
 }
 /*
+
 .image {
     background-image: url(cómo cargar la imagen);
         max-width: 1100px;
@@ -24,7 +203,7 @@ h1 {
       }
 */
     
-    .btnpmovil {
+    .btncontact {
             position: relative;
             background-color: #ffa400;
             border: 1px solid #222;
@@ -40,16 +219,117 @@ h1 {
             font-size: 22px;
             margin-left: auto;
             margin-right: auto;
+            top:900px;
+
+
           }
-.imagenfondo {
-    border: 1px solid black;
-    padding: 25px;
-    background: url(../img/tramaylogo_ibp8iu_c_scale\,w_817.png);
-    background-repeat: no-repeat;
-    background-size: auto;
+
     
+        
+/*
+        .imagenfondopajaro {
+    background: url(../img/trama-y-logo-500x1000.png);
+    background-repeat: no-repeat;
+    height: 1300px;
+    background-size: 100%
 }
-.altura-fondo {
-    height: 700px;
-    width: 700px;
+*/
+
+
+
+
+
+
+
+.container {
+    margin-block-start: auto;
+    padding: 50px 50px 50px 50px;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+  }
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+/*
+
+.btnmenu {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50em;
+    
+    background-repeat: no-repeat;
+    background-size: auto;    
 }
+menu-display-none {
+display: none;
+}
+
+
+.texto-girado {
+    transform:  translateX(89%) translateY(-2%) rotate(270deg);
+    margin-block-start: initial;
+    width: 1000px;
+    font-size: 38px;
+    
+
+    }
+.text-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:#ffa400;
+    padding-right: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    font-family: 'Cinzel';
+    font-size: 15px;
+    display: inline-flex;
+.fondo-blanco {
+    background-color: #ffff;
+    height: 95px;
+}
+:root {
+    cursor: none!important;
+    --cursor-size: 16px;
+}
+html {
+    font-family: "Founders Grotesk Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    line-height: 1.15;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+::selection {
+    background: #ffa400;
+}*/

@@ -1,136 +1,233 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="has-scroll-init has-scroll-smooth">
+	<head>
+	<title>About me Andrea Casanova</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" 
+	rel="stylesheet">
+	<link rel="shortcut icon" href="../proyect-alpha/img/logo-borde_xqinhz_c_scale,w_280.png">
+	<script>
+		function funcionQueMuestraUOcultaElMenu(){
+			//obtenemos el div menu de html, mediante el id que le he asignado, 
+			//en este caso "menu"
+			let divmenuElementoCapturadoDelHTML= document.getElementById("menu");
+			if(divmenuElementoCapturadoDelHTML.className=="divmenu ocultar"){
+				//Queremos mostrarlo
+				divmenuElementoCapturadoDelHTML.classList.remove("ocultar");
+				divmenuElementoCapturadoDelHTML.classList.add("mostrar");
+			}else{
+				//Queremos ocultarlo
+				divmenuElementoCapturadoDelHTML.classList.remove("mostrar");
+				divmenuElementoCapturadoDelHTML.classList.add("ocultar");
+			}
+		}
+	</script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<style> 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+ </style>
+ 
+	</head>
 
-    <style> @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap'); </style>
-    
-    <title>About me Andrea Casanova</title>    
-</head>
-<body>
-
-    <header>
-        <!--
-            Para que el boton quede sobre la imagen
-            en la clase .altura-fondo se ha dado el ancho y alto
-            y en la clase .imagenfondo se ha cargado la imagen del 
-            fondo en css
-        -->
-            <div class="imagenfondo altura-fondo">
-                <button class="btnpmovil">
-                    Andrea Casanova 2
-                </button> 
+    <body>
+        <main>
+            
+            
+            <div class="imagenportada" >
+                    <!--onclic es un evento predefinido del buttom, lo usamos 
+                    para ejecutar la funcion mostrar y ocultar el nemu-->
+            <!--    <nav class="menu divmenu ocultar" id="menu">
+                    <ul>
+                        <li class="menu">#<a  href="" >More About me</a> </li>	
+                            
+                        <li class="menu">#<a  href="" >Developer Web Design / Clients</a> </li>
+                                    
+                        <li class="menu">#<a  href="" >UX UI Design / Clients</a></li>
+                                    
+                        <li class="menu">#<a  href="" >Visual Artist / Portfolio</a></li>
+                                    
+                        <li><a  href="#" >Store / Art and Objects</a></li>
+                    </ul>       
+                </nav>	
+            -->
+            </div>						   
+            
+            <div class="content-retrato">
+                <div class="vertical-text__text">
+                        Front-end Developer and Visual Artist 
+                </div>
+                
+                <div class="foto-retrato">
+                              
+               </div>
             </div>
-           
+            <div class="fondo-negro">
+                
+                <p>
+                    Mi nombre es Andrea Casanova soy apasionada 
+                    del arte y el diseño, Artista Visual multidisciplinar,
+                     tengo más de diez años de trayectoria, muchas 
+                     exposiciones y algunos premios.
+                </p>
+                <p>
+                    Mi personalidad es inquieta y me gusta estar en constante 
+                    aprendizaje,  por eso comencé a incursionar por el diseño 
+                    web y hoy me especializo en desarrollo Front end, diseño 
+                    UX UI y marketing digital.
+                </p>
+                <p>
+                    Me encanta poner mis conocimientos al servicio de las 
+                    necesidades de otros artistas y fotógrafos y ayudarlos 
+                    a destacar sus obras, no obstante, estoy capacitada para
+                     desarrollar cualquier tipo de proyecto web.
+                </p>
+            </div>
+        </main>
+        <!--aca comienzan las secciones independietes-->
+        <section>
+            <div class="content">
+                <div class="foto-diseño-web" >
+                    <div class="vertical-text__text servicios">
+                        Web Design 
+                    </div>
+                </div>
 
-           <!--<div class="image">
-                <figure>
-                    <img src="../about-me/img/tramaylogo_ibp8iu_c_scale,w_634.png" alt="">
-                        <div>
-                             <button class="btnpmovil">
-                                Andrea Casanova
-                                <img src="../about-me/img/tramaylogo_ibp8iu_c_scale,w_634.png" alt="">
-                   
+                <div>
+                    <p class="texto-servicios">
+                        He desarrollado sitios web y portafolios 
+                        con e-commerce de varios artistas, entre 
+                        ellos Javiera del Campo, Alfonso Fernández. 
+                        Puedes consultar su trabajo en el enlace del menú.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <div class="foto-ux-ui" >
+                    <div class="vertical-text__text servicios">
+                        UX / UI Design 
+                    </div>
+                </div>
+
+                <div>
+                    <p class="texto-servicios">El objetivo de la experiencia 
+                        de usuario es optimizar la interaccion de los seres 
+                        humanos con los sistemas tecnologicos mediante el diseño 
+                        de interfaces  eficientes e intuitivas. Mi objetivo es 
+                        diseñar sitios web,
+                         aplicaciones y otros productos que no solo 
+                         sean efectivos sino también agradables de usar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <div class="foto-marketing" >
+                    <div class="vertical-text__text servicios">
+                        Digital Marketing 
+                    </div>
+                </div>
+
+                <div class="">             
+                </div>
+
+                <div>
+                    <p class="texto-servicios">Una estrategia de marketing 
+                        digital efectiva es esencial para cualquier empresa 
+                        que desee prosperar en la era digital. Sin embargo, 
+                        el marketing digital no es una disciplina magica. 
+                        Hay que planificar y ejecutar una estrategia de marketing 
+                        digital bien diseñada para lograr resultados.
+                    </p>
+                </div>
+            </div>    
+        </section>
+        <section>
+            <div class="content">
+                <div class="shop-art" >
+                    <div class="vertical-text__text servicios">
+                        Shop Art 
+                    </div>
+                </div>
+
+                <div>
+
+                    <p class="texto-servicios">No dejes de visitar mi sitio web, 
+                        aquí podrás comprar
+                        obras originales y gicleés. ¡Haz click en el logotipo!
+                    </p>
+                </div>    
+            </div>
+        </section>
+        <footer class="seccion-caja">
+				
+            <div class="contenedor-imagen2" >
+                <div class="contenedor-todo-footer" >
+                    <div class="form">
+                        <div class="logomio">
+                            <a href="https://andreacasanova.art" target="_blank">
+                                <img src="../proyect-alpha/img/logo-letras-400px.png"
+                                alt="tienda de arte" />
+                            </a>
+                        </div>
+                        <!--El input se le puede asignar estilo mendiante las mismas clases
+                        elplaceholder nuestra el texto en elinterior del input
+                        la class en css es la que yo elija, el texto se centra con text.align:center-->								
+                        <div class="contact">
+                            CONTACT
+                            <input type="text" placeholder="Name and Surname" class="btncontact" id="apellido">
+        
+                            <input for="email" placeholder="E-mail" class="btncontact">
+                        
+                            <input type="message" placeholder="Message" class="btncontact">
+                            <label for="agree-1">agree terms</label>
+                    
+                            <input type="checkbox" id="agree-1" class="radio">
+        
+                            <button class="btncontact">
+                                Send
                             </button>
                         </div>
-                </figure>
-                
-            </div> --> 
+                    </div>
 
-        
-            
-            
-        <div class="menu-display-none">....
-            <nav>
-                <menu>
-                <ul >
-                    <li class="btnpmovil"><a href="">More about me</a></li>
-                    <li class="btnpmovil"><a href="">Developer Web Design / Clients</a></li>
-                    <li class="btnpmovil"><a href="">UX UI Design / Clients</a></li>
-                    <li class="btnpmovil"><a href="">Visual Artist / Portfolio</a></li>
-                    <li class="btnpmovil"><a href="">Store / Art and Objects</a></li>
-                </ul>
-                </menu>        
-            </nav> 
-        </div>
+                    <div class="btnrrss">
+                        <a href="https://codepen.io/your-work/" target="_blank">
+                        <img src="../proyect-alpha/img/rrss-codepen.png"
+                        alt="" />
+                        </a>
 
-                <h1 class="texto-girado">Front-end Developer and Visual Artist</h1>
-                <img src="img/andrea-casanova_wxenzr_c_scale,w_613.png" alt="Andrea Casanova">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Distinctio, iusto labore beatae molestias ipsam aliquid 
-                    voluptatibus explicabo itaque, hic officiis velit ad modi 
-                    maiores, ipsa odit reiciendis rem facilis incidunt?</p>
-       
-               
-    </header>
-            <section>
-                <h1 class="texto-girado">Web Design</h1>
-                 <img src="img/diseno-web_man35p_c_scale,w_610.png" alt="diseño web">
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Distinctio, iusto labore beatae molestias ipsam aliquid 
-                    voluptatibus explicabo itaque, hic officiis velit ad modi 
-                    maiores, ipsa odit reiciendis rem facilis incidunt?</p>
-            </section>
-            <section>
-                <h1 class="texto-girado">UX / UI Desing</h1>
-                <img src="img/ux-ui,w_631.png" alt="diseño ux ui">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Distinctio, iusto labore beatae molestias ipsam aliquid 
-                    voluptatibus explicabo itaque, hic officiis velit ad modi 
-                    maiores, ipsa odit reiciendis rem facilis incidunt?</p>
-            </section>
-            <section>
-                <h1 class="texto-girado">MARKETING DIGITAL</h1>
-                <img src="img/marketing,w_637.png" alt="marketing digital">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Distinctio, iusto labore beatae molestias ipsam aliquid 
-                    voluptatibus explicabo itaque, hic officiis velit ad modi 
-                    maiores, ipsa odit reiciendis rem facilis incidunt?</p>
-            </section>
-            <section>
-                <h1 class="texto-girado">Art Shop</h1>
-                <img src="img/art-shop_oaplpt_c_scale,w_623.png" alt="Shop art">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Distinctio, iusto labore beatae molestias ipsam aliquid 
-                    voluptatibus explicabo itaque, hic officiis velit ad modi 
-                    maiores, ipsa odit reiciendis rem facilis incidunt?</p>
-                <img src="img/logo-letras_jbgdis_c_scale,w_180.png" alt="logo cuervo web">
-            </section>
+                        <a href="https://github.com/andreacasanova1/proyect-alpha" target="_blank">
+                        <img src="../proyect-alpha/img/rrss-git.png"
+                        alt="" />
+                        </a>
+                            
+                        <a href="https://www.linkedin.com/in/andrea-casanova-8994511a3/" target="_blank">
+                        <img src="../proyect-alpha/img/rrss-in.png"
+                        alt="" />
+                        </a>	
+                                
+                        <a href="https://www.instagram.com/andreacasanova.art/" target="_blank">
+                        <img src="../proyect-alpha/img/rrss-instagram.png"
+                        alt="" />
+                        </a>
+                    </div>				   
+            </div>						   
+        </footer>
 
-            <footer>
-                <div>
-                    <figure>
-                        <img src="../about-me/img/trama-blanco2_bxgrqg_c_scale,w_630.png" alt="">
-                    </figure>
-                    <form action="/my-handling-form-page" method="post">
-                        <ul>
-                            <li>
-                                <label for="Name and Surname"></label>
-                                <input type="text" id="name" name="user_name" />
-                            </li>
-                            <li>
-                                <label for="E-mail"></label>
-                                <input type="email" id="mail" name="user_mail" />
-                            </li>
-                            <li>
-                                <label for="Message"></label>
-                                <textarea id="msg" name="user_message"></textarea>
-                            </li>
-                            <li class="button">
-                                <button class="btnpmobil" type="submit">Send your message</button>
-                            </li>
-                        </ul>
-                    </form>
 
-                </div>
-            </footer>
-    
-    
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+    </body>    
